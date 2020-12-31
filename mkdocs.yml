@@ -1,0 +1,19 @@
+site_name: Docker Service Deploy
+
+docs_dir: 'pages'
+site_dir: 'docs'
+
+nav:
+- Overview: overview.md
+
+- 'Service Specification':
+  - Basics: service-spec/basics.md
+
+- Commands:
+  - Deploy Service: commands/deploy-service.md
+  - Expand Service Model: commands/expand-service-model.md
+  - Test Auth Config: commands/test-auth-config.md
+
+theme:
+  name: readthedocs
+  highlightjs: true
