@@ -1,0 +1,9 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<ItemGroup>
+		<DockerServiceDeploy Include="$(MSBuildThisFileDirectory)..\bin\**\*" />
+	</ItemGroup>
+
+	<Target Name="CopyDockerServiceDeploy" AfterTargets="Build">
+		<Copy SourceFiles="@(DockerServiceDeploy)" DestinationFolder="$(TargetDir)\DockerServiceDeploy\%(RecursiveDir)" />
+	</Target>
+</Project>
