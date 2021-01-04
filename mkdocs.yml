@@ -4,15 +4,19 @@ docs_dir: 'pages'
 site_dir: 'docs'
 
 nav:
-- Overview: overview.md
+- Overview: index.md
 
-- 'Service Specification':
-  - Basics: service-spec/basics.md
+- 'Getting Started':
+  - 'Install Docker': 'getting-started/install-docker.md'
+  - 'Setup Swarm': 'getting-started/setup-swarm.md'
 
 - Commands:
   - Deploy Service: commands/deploy-service.md
   - Expand Service Model: commands/expand-service-model.md
   - Test Auth Config: commands/test-auth-config.md
+
+- 'Service Specification':
+  - Basics: service-spec/basics.md
 
 theme:
   name: readthedocs
