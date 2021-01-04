@@ -7,13 +7,18 @@ nav:
 - Overview: index.md
 
 - 'Getting Started':
-  - 'Install Docker': 'getting-started/install-docker.md'
-  - 'Setup Swarm': 'getting-started/setup-swarm.md'
+  - 'Install Docker': 'getting-started/01-install-docker.md'
+  - 'Setup Swarm': 'getting-started/02-setup-swarm.md'
+  - 'Create an Image': 'getting-started/03-create-an-image.md'
+  - 'Deploy a Service': 'getting-started/04-deploy-a-service.md'
 
 - Commands:
   - Deploy Service: commands/deploy-service.md
   - Expand Service Model: commands/expand-service-model.md
   - Test Auth Config: commands/test-auth-config.md
+
+- Library:
+  - 'Create Service': library/01-create-service.md
 
 - 'Service Specification':
   - Basics: service-spec/basics.md
@@ -21,3 +26,9 @@ nav:
 theme:
   name: readthedocs
   highlightjs: true
+  hljs_languages:
+    - bash
+    - powershell
+
+markdown_extensions:
+  - sane_lists
