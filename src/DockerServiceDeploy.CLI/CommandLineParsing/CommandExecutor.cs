@@ -10,7 +10,7 @@ namespace Flyingpie.DockerServiceDeploy.CLI.CommandLineParsing
 {
 	public static class CommandExecutor
 	{
-		public static void Execute(string[] args)
+		public static int Execute(string[] args)
 		{
 			// Load available commands
 			var commandTypes = Assembly.GetEntryAssembly().GetTypes()
@@ -19,6 +19,8 @@ namespace Flyingpie.DockerServiceDeploy.CLI.CommandLineParsing
 				.ToArray();
 
 			var parser = new Parser(config => config.HelpWriter = null);
+
+			var exitCode = 0;
 
 			// Parse command line options, CommandLineOptions will print a help message when the user messes this up
 			var optionsParseResult = parser.ParseArguments(args, commandTypes)
@@ -34,6 +36,7 @@ namespace Flyingpie.DockerServiceDeploy.CLI.CommandLineParsing
 					catch (Exception e)
 					{
 						Log.Logger.Fatal(e, $"Error while executing command of type '{command.GetType()}': {e.Message}");
+						exitCode = 1;
 					}
 				});
 
@@ -60,6 +63,8 @@ namespace Flyingpie.DockerServiceDeploy.CLI.CommandLineParsing
 					Console.WriteLine(HelpText.AutoBuild(notParsed).ToString());
 				}
 			}
+
+			return exitCode;
 		}
 
 		public static void PrintHelpText(string[] args, Type[] commandTypes)

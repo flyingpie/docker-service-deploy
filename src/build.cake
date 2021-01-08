@@ -5,16 +5,12 @@ var configuration = Argument("configuration", "Release");
 var isPreRelease = Argument("isPreRelease", true);
 var output = Argument("output", "artifacts");
 
-var sln = GetFiles("*.sln")[0];
-
-var gv = GitVersion();
-var branch = gv.BranchName;
-if(branch.Contains("/")) branch = branch.Substring(branch.LastIndexOf('/') + 1);
+var sln = GetFiles("*.sln").First().FullPath;
 
 Task("Default")
 	.IsDependentOn("Clean")
 	.IsDependentOn("Build")
-	.IsDependentOn("Artifact.NuGet")
+//	.IsDependentOn("Artifact.NuGet")
 	.Does(() => {})
 ;
 

@@ -1,4 +1,6 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Serilog;
+using Serilog.Events;
 using System.Threading.Tasks;
 
 using static Flyingpie.DockerServiceDeploy.IntegrationTest.Constants;
@@ -14,7 +16,11 @@ namespace Flyingpie.DockerServiceDeploy.IntegrationTest
 		[AssemblyInitialize]
 		public static void AssemblyInitialize(TestContext context)
 		{
-			Logging.Setup(isVerbose: true);
+			Log.Logger = new LoggerConfiguration()
+				.MinimumLevel.Is(LogEventLevel.Verbose)
+				.WriteTo.File("logs/log.txt")
+				.CreateLogger()
+			;
 
 			CleanupDockerServicesAsync().GetAwaiter().GetResult();
 		}
