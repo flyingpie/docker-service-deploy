@@ -14,7 +14,7 @@
     
     
       
-        <title>Test Auth Config - Docker Service Deploy</title>
+        <title>Deploy a Service - Docker Service Deploy</title>
       
     
     
@@ -66,7 +66,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#command-test-auth-config" class="md-skip">
+        <a href="#deploy-a-service" class="md-skip">
           Skip to content
         </a>
       
@@ -98,7 +98,7 @@
         <div class="md-header-nav__topic">
           <span class="md-ellipsis">
             
-              Test Auth Config
+              Deploy a Service
             
           </span>
         </div>
@@ -188,12 +188,14 @@
       
 
 
+  
+
 
   
-  <li class="md-nav__item md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" >
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
     
     <label class="md-nav__link" for="nav-2">
       Getting Started
@@ -214,7 +216,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../getting-started/01-install-docker/" class="md-nav__link">
+    <a href="../01-install-docker/" class="md-nav__link">
       Install Docker
     </a>
   </li>
@@ -227,7 +229,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../getting-started/02-setup-swarm/" class="md-nav__link">
+    <a href="../02-setup-swarm/" class="md-nav__link">
       Setup Swarm
     </a>
   </li>
@@ -240,78 +242,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../getting-started/03-create-an-image/" class="md-nav__link">
+    <a href="../03-create-an-image/" class="md-nav__link">
       Create an Image
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-
-  <li class="md-nav__item">
-    <a href="../../getting-started/04-deploy-a-service/" class="md-nav__link">
-      Deploy a Service
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-    
-      
-      
-      
-
-
-  
-
-
-  
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
-    
-    
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
-    
-    <label class="md-nav__link" for="nav-3">
-      Commands
-      <span class="md-nav__icon md-icon"></span>
-    </label>
-    <nav class="md-nav" aria-label="Commands" data-md-level="1">
-      <label class="md-nav__title" for="nav-3">
-        <span class="md-nav__icon md-icon"></span>
-        Commands
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-
-  <li class="md-nav__item">
-    <a href="../deploy-service/" class="md-nav__link">
-      Deploy Service
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-
-  <li class="md-nav__item">
-    <a href="../expand-service-model/" class="md-nav__link">
-      Expand Service Model
     </a>
   </li>
 
@@ -332,9 +264,77 @@
     
     
     <a href="./" class="md-nav__link md-nav__link--active">
-      Test Auth Config
+      Deploy a Service
     </a>
     
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+
+  
+  <li class="md-nav__item md-nav__item--nested">
+    
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" >
+    
+    <label class="md-nav__link" for="nav-3">
+      Commands
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Commands" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        <span class="md-nav__icon md-icon"></span>
+        Commands
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../../commands/deploy-service/" class="md-nav__link">
+      Deploy Service
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../../commands/expand-service-model/" class="md-nav__link">
+      Expand Service Model
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../../commands/test-auth-config/" class="md-nav__link">
+      Test Auth Config
+    </a>
   </li>
 
         
@@ -456,8 +456,11 @@
               
                 
                 
-                <h1 id="command-test-auth-config">Command - Test Auth Config</h1>
-<p>Attempts to load auth from the local .docker/config.json file to see if it's accessible.</p>
+                <h1 id="deploy-a-service">Deploy A Service</h1>
+<p>Now it's time to deploy a service.</p>
+<p>This can be done using the command line tool, or through the .Net library.</p>
+<p><a href="/commands/deploy-service">Using the command line tool</a></p>
+<p><a href="/library/deploy-service">Using the library</a></p>
                 
               
               
@@ -476,7 +479,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
         
-          <a href="../expand-service-model/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../03-create-an-image/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-footer-nav__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
             </div>
@@ -485,19 +488,19 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Expand Service Model
+                Create an Image
               </div>
             </div>
           </a>
         
         
-          <a href="../../library/01-create-service/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../../commands/deploy-service/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-footer-nav__title">
               <div class="md-ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Create Service
+                Deploy Service
               </div>
             </div>
             <div class="md-footer-nav__button md-icon">

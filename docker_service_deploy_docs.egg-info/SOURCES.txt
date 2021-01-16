@@ -1,0 +1,6 @@
+setup.py
+docker_service_deploy_docs.egg-info/PKG-INFO
+docker_service_deploy_docs.egg-info/SOURCES.txt
+docker_service_deploy_docs.egg-info/dependency_links.txt
+docker_service_deploy_docs.egg-info/requires.txt
+docker_service_deploy_docs.egg-info/top_level.txt

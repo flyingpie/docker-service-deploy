@@ -14,7 +14,7 @@
     
     
       
-        <title>Test Auth Config - Docker Service Deploy</title>
+        <title>Install Docker - Docker Service Deploy</title>
       
     
     
@@ -66,7 +66,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#command-test-auth-config" class="md-skip">
+        <a href="#install-docker" class="md-skip">
           Skip to content
         </a>
       
@@ -98,7 +98,7 @@
         <div class="md-header-nav__topic">
           <span class="md-ellipsis">
             
-              Test Auth Config
+              Install Docker
             
           </span>
         </div>
@@ -188,12 +188,14 @@
       
 
 
+  
+
 
   
-  <li class="md-nav__item md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" >
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
     
     <label class="md-nav__link" for="nav-2">
       Getting Started
@@ -212,11 +214,56 @@
           
 
 
+  
 
-  <li class="md-nav__item">
-    <a href="../../getting-started/01-install-docker/" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Install Docker
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+    
+    <a href="./" class="md-nav__link md-nav__link--active">
       Install Docker
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#windows-server" class="md-nav__link">
+    Windows Server
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#linux" class="md-nav__link">
+    Linux
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -227,7 +274,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../getting-started/02-setup-swarm/" class="md-nav__link">
+    <a href="../02-setup-swarm/" class="md-nav__link">
       Setup Swarm
     </a>
   </li>
@@ -240,7 +287,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../getting-started/03-create-an-image/" class="md-nav__link">
+    <a href="../03-create-an-image/" class="md-nav__link">
       Create an Image
     </a>
   </li>
@@ -253,7 +300,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../getting-started/04-deploy-a-service/" class="md-nav__link">
+    <a href="../04-deploy-a-service/" class="md-nav__link">
       Deploy a Service
     </a>
   </li>
@@ -269,14 +316,12 @@
       
 
 
-  
-
 
   
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" >
     
     <label class="md-nav__link" for="nav-3">
       Commands
@@ -297,7 +342,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../deploy-service/" class="md-nav__link">
+    <a href="../../commands/deploy-service/" class="md-nav__link">
       Deploy Service
     </a>
   </li>
@@ -310,7 +355,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../expand-service-model/" class="md-nav__link">
+    <a href="../../commands/expand-service-model/" class="md-nav__link">
       Expand Service Model
     </a>
   </li>
@@ -321,20 +366,11 @@
           
 
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-      
-    
-    
-    <a href="./" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../../commands/test-auth-config/" class="md-nav__link">
       Test Auth Config
     </a>
-    
   </li>
 
         
@@ -445,6 +481,28 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#windows-server" class="md-nav__link">
+    Windows Server
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#linux" class="md-nav__link">
+    Linux
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -456,8 +514,38 @@
               
                 
                 
-                <h1 id="command-test-auth-config">Command - Test Auth Config</h1>
-<p>Attempts to load auth from the local .docker/config.json file to see if it's accessible.</p>
+                <h1 id="install-docker">Install Docker</h1>
+<p>General information on how to install Docker on the available operating systems can be found here:</p>
+<p><a href="https://docs.docker.com/get-docker/">docker.com - Get Docker</a></p>
+<h2 id="windows-server">Windows Server</h2>
+<p>Take note that when looking for "Install Docker on Windows", 9 out of 10 results point to Docker Desktop.
+This is nice for development, but you don't want to do this on Windows Server 2016+ installations.</p>
+<p>The short version (all powershell):</p>
+<p><strong>Enable the "Containers" feature.</strong></p>
+<pre><code class="language-powershell">Install-WindowsFeature Containers -Restart
+</code></pre>
+<p><strong>Install the Docker package provider.</strong></p>
+<pre><code class="language-powershell">Install-Module -Name DockerMsftProvider -Repository PSGallery -Force
+</code></pre>
+<p><strong>Install Docker.</strong></p>
+<pre><code class="language-powershell">Install-Package -Name docker -ProviderName DockerMsftProvider
+</code></pre>
+<p><strong>Start the Docker service.</strong></p>
+<pre><code class="language-powershell">Start-Service Docker
+</code></pre>
+<p><strong>Test it out.</strong></p>
+<pre><code class="language-powershell">docker run hello-world
+</code></pre>
+<p><a href="https://4sysops.com/archives/install-docker-on-windows-server-2019/">A longer explanation</a></p>
+<h2 id="linux">Linux</h2>
+<p>The quickest way to get Docker working on Linux, is probably using the convenience script.
+This script automatically detects the distribution in use and pulls in all the required bits.</p>
+<p>This is not necessarily the best way though, since it might not correctly detect the running distro,
+and it also requires sudo, after which it executes a pile of scripts that directly come from the internet.</p>
+<p>Having given you those warning, <a href="https://docs.docker.com/engine/install/ubuntu/#install-using-the-convenience-script">here you go</a>:</p>
+<pre><code class="language-bash">curl -fsSL https://get.docker.com -o get-docker.sh
+sudo sh get-docker.sh
+</code></pre>
                 
               
               
@@ -476,7 +564,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
         
-          <a href="../expand-service-model/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../.." class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-footer-nav__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
             </div>
@@ -485,19 +573,19 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Expand Service Model
+                Overview
               </div>
             </div>
           </a>
         
         
-          <a href="../../library/01-create-service/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../02-setup-swarm/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-footer-nav__title">
               <div class="md-ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Create Service
+                Setup Swarm
               </div>
             </div>
             <div class="md-footer-nav__button md-icon">

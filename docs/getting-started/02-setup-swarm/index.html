@@ -14,7 +14,7 @@
     
     
       
-        <title>Test Auth Config - Docker Service Deploy</title>
+        <title>Setup Swarm - Docker Service Deploy</title>
       
     
     
@@ -66,7 +66,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#command-test-auth-config" class="md-skip">
+        <a href="#setup-swarm" class="md-skip">
           Skip to content
         </a>
       
@@ -98,7 +98,7 @@
         <div class="md-header-nav__topic">
           <span class="md-ellipsis">
             
-              Test Auth Config
+              Setup Swarm
             
           </span>
         </div>
@@ -188,12 +188,14 @@
       
 
 
+  
+
 
   
-  <li class="md-nav__item md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" >
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
     
     <label class="md-nav__link" for="nav-2">
       Getting Started
@@ -214,104 +216,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../getting-started/01-install-docker/" class="md-nav__link">
+    <a href="../01-install-docker/" class="md-nav__link">
       Install Docker
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-
-  <li class="md-nav__item">
-    <a href="../../getting-started/02-setup-swarm/" class="md-nav__link">
-      Setup Swarm
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-
-  <li class="md-nav__item">
-    <a href="../../getting-started/03-create-an-image/" class="md-nav__link">
-      Create an Image
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-
-  <li class="md-nav__item">
-    <a href="../../getting-started/04-deploy-a-service/" class="md-nav__link">
-      Deploy a Service
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-    
-      
-      
-      
-
-
-  
-
-
-  
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
-    
-    
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
-    
-    <label class="md-nav__link" for="nav-3">
-      Commands
-      <span class="md-nav__icon md-icon"></span>
-    </label>
-    <nav class="md-nav" aria-label="Commands" data-md-level="1">
-      <label class="md-nav__title" for="nav-3">
-        <span class="md-nav__icon md-icon"></span>
-        Commands
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-
-  <li class="md-nav__item">
-    <a href="../deploy-service/" class="md-nav__link">
-      Deploy Service
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-
-  <li class="md-nav__item">
-    <a href="../expand-service-model/" class="md-nav__link">
-      Expand Service Model
     </a>
   </li>
 
@@ -332,9 +238,103 @@
     
     
     <a href="./" class="md-nav__link md-nav__link--active">
-      Test Auth Config
+      Setup Swarm
     </a>
     
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../03-create-an-image/" class="md-nav__link">
+      Create an Image
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../04-deploy-a-service/" class="md-nav__link">
+      Deploy a Service
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+
+  
+  <li class="md-nav__item md-nav__item--nested">
+    
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" >
+    
+    <label class="md-nav__link" for="nav-3">
+      Commands
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Commands" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        <span class="md-nav__icon md-icon"></span>
+        Commands
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../../commands/deploy-service/" class="md-nav__link">
+      Deploy Service
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../../commands/expand-service-model/" class="md-nav__link">
+      Expand Service Model
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../../commands/test-auth-config/" class="md-nav__link">
+      Test Auth Config
+    </a>
   </li>
 
         
@@ -456,8 +456,22 @@
               
                 
                 
-                <h1 id="command-test-auth-config">Command - Test Auth Config</h1>
-<p>Attempts to load auth from the local .docker/config.json file to see if it's accessible.</p>
+                <h1 id="setup-swarm">Setup Swarm</h1>
+<p>With at least a single node running and Docker installed, we need to setup a <strong>Docker Swarm Cluster</strong>.</p>
+<p>This is quite easy, and can be done with a single command (replace the IP address with that of the node).</p>
+<p><strong>First Node</strong></p>
+<pre><code class="language-bash">docker swarm init --advertise-addr 192.168.1.25
+</code></pre>
+<p>The IP is not strictly necessary, but especially when running on a host with multiple IP's, this prevents issues with Docker
+choosing the wrong address and multiple nodes not being able to talk to one another.</p>
+<p>Obtain a <strong>join token</strong> using the following command:</p>
+<pre><code class="language-bash">docker swarm join-token worker
+</code></pre>
+<p>For all the other nodes, run the following command to connect to the first node (replace the IP address with that of the node):</p>
+<p><strong>All Other Nodes</strong></p>
+<pre><code class="language-bash">docker swarm join &lt;token&gt; --advertise-addr 192.168.1.26
+</code></pre>
+<p>Deployments can only be done from <strong>manager</strong> nodes. It's advisable to have either 3 or 5 manager nodes in a cluster.</p>
                 
               
               
@@ -476,7 +490,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
         
-          <a href="../expand-service-model/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../01-install-docker/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-footer-nav__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
             </div>
@@ -485,19 +499,19 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Expand Service Model
+                Install Docker
               </div>
             </div>
           </a>
         
         
-          <a href="../../library/01-create-service/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../03-create-an-image/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-footer-nav__title">
               <div class="md-ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Create Service
+                Create an Image
               </div>
             </div>
             <div class="md-footer-nav__button md-icon">

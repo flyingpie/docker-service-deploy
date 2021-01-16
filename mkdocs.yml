@@ -24,11 +24,24 @@ nav:
   - Basics: service-spec/basics.md
 
 theme:
-  name: readthedocs
+#  name: readthedocs
+#  name: windmill
+#  name: custommill
+  name: material
+  palette:
+    scheme: slate
+    primary: blue
   highlightjs: true
   hljs_languages:
     - bash
     - powershell
+
+extra_javascript:
+  - https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/highlight.min.js
+  - config.js
+extra_css:
+  - extra.css
+  - https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/styles/default.min.css
 
 markdown_extensions:
   - sane_lists
