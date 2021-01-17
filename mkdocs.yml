@@ -1,11 +1,10 @@
 site_name: Docker Service Deploy
+site_author: flyingpie
 
 docs_dir: 'pages'
 site_dir: 'docs'
 
 nav:
-- Overview: index.md
-
 - 'Getting Started':
   - 'Install Docker': 'getting-started/01-install-docker.md'
   - 'Setup Swarm': 'getting-started/02-setup-swarm.md'
@@ -24,24 +23,33 @@ nav:
   - Basics: service-spec/basics.md
 
 theme:
-#  name: readthedocs
-#  name: windmill
-#  name: custommill
   name: material
-  palette:
-    scheme: slate
-    primary: blue
+  favicon: assets/favicon.ico
+  features:
+    - navigation.sections
+  font: false
   highlightjs: true
   hljs_languages:
     - bash
     - powershell
+  icon:
+    repo: fontawesome/brands/github
+  logo: assets/favicon.png
+  palette:
+    scheme: slate
+    primary: blue
+
+repo_name: docker-service-deploy
+repo_url: http://github.com/flyingpie/docker-service-deploy
 
 extra_javascript:
-  - https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/highlight.min.js
-  - config.js
+  - assets/highlight/highlight.pack.js
+  - assets/config.js
 extra_css:
-  - extra.css
-  - https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/styles/default.min.css
+  - assets/highlight/styles/vs2015.css
+  - assets/styles.css
 
 markdown_extensions:
   - sane_lists
+  - pymdownx.highlight:
+      use_pygments: false

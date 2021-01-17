@@ -2,6 +2,14 @@
 
 Welcome!
 
+```js
+let a = "b";
+```
+
+```powershell
+$a = "B"
+```
+
 ## What It Does
 
 ...

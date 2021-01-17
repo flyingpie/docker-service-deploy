@@ -11,23 +11,17 @@ This is nice for development, but you don't want to do this on Windows Server 20
 
 The short version (all powershell):
 
-**Enable the "Containers" feature.**
 ```powershell
+# Enable the "Containers" feature
 Install-WindowsFeature Containers -Restart
-```
 
-**Install the Docker package provider.**
-```powershell
+# Install the Docker package provider
 Install-Module -Name DockerMsftProvider -Repository PSGallery -Force
-```
 
-**Install Docker.**
-```powershell
+# Install Docker
 Install-Package -Name docker -ProviderName DockerMsftProvider
-```
 
-**Start the Docker service.**
-```powershell
+# Start the Docker service
 Start-Service Docker
 ```
 
@@ -36,7 +30,9 @@ Start-Service Docker
 docker run hello-world
 ```
 
-[A longer explanation](https://4sysops.com/archives/install-docker-on-windows-server-2019/)
+For a longer explanation, see this post from [Elton Stoneman](https://blog.sixeyed.com/):
+
+[Getting Started with Docker on Windows Server 2019](https://blog.sixeyed.com/getting-started-with-docker-on-windows-server-2019/)
 
 ## Linux
 
