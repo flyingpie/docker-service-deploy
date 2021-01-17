@@ -16,7 +16,7 @@
     
     
       
-        <title>Create an Image - Docker Service Deploy</title>
+        <title>Install Docker - Docker Service Deploy</title>
       
     
     
@@ -62,6 +62,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#install-docker" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -89,7 +94,7 @@
         <div class="md-header-nav__topic">
           <span class="md-ellipsis">
             
-              Create an Image
+              Install Docker
             
           </span>
         </div>
@@ -219,11 +224,56 @@
           
 
 
+  
 
-  <li class="md-nav__item">
-    <a href="../01-install-docker/" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Install Docker
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+    
+    <a href="./" class="md-nav__link md-nav__link--active">
       Install Docker
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#windows-server" class="md-nav__link">
+    Windows Server
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#linux" class="md-nav__link">
+    Linux
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -234,7 +284,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../02-setup-swarm/" class="md-nav__link">
+    <a href="../setup-swarm/" class="md-nav__link">
       Setup Swarm
     </a>
   </li>
@@ -245,18 +295,11 @@
           
 
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-    
-    <a href="./" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../create-an-image/" class="md-nav__link">
       Create an Image
     </a>
-    
   </li>
 
         
@@ -267,7 +310,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../04-deploy-a-service/" class="md-nav__link">
+    <a href="../deploy-a-service/" class="md-nav__link">
       Deploy a Service
     </a>
   </li>
@@ -381,7 +424,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../library/01-create-service/" class="md-nav__link">
+    <a href="../../library/deploy-service/" class="md-nav__link">
       Create Service
     </a>
   </li>
@@ -443,19 +486,87 @@
               </div>
             
             
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#windows-server" class="md-nav__link">
+    Windows Server
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#linux" class="md-nav__link">
+    Linux
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content">
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="http://github.com/flyingpie/docker-service-deploy/edit/master/docs/getting-started/03-create-an-image.md" title="Edit this page" class="md-content__button md-icon">
+                  <a href="http://github.com/flyingpie/docker-service-deploy/edit/master/docs/getting-started/install-docker.md" title="Edit this page" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
                 
-                  <h1>Create an Image</h1>
-                
-                
+                <h1 id="install-docker">Install Docker</h1>
+<p>General information on how to install Docker on the available operating systems can be found here:</p>
+<p><a href="https://docs.docker.com/get-docker/">docker.com - Get Docker</a></p>
+<h2 id="windows-server">Windows Server</h2>
+<p>Take note that when looking for "Install Docker on Windows", 9 out of 10 results point to Docker Desktop.
+This is nice for development, but you don't want to do this on Windows Server 2016+ installations.</p>
+<p>The short version (all powershell):</p>
+<pre><code class="language-powershell"># Enable the &quot;Containers&quot; feature
+Install-WindowsFeature Containers -Restart
+
+# Install the Docker package provider
+Install-Module -Name DockerMsftProvider -Repository PSGallery -Force
+
+# Install Docker
+Install-Package -Name docker -ProviderName DockerMsftProvider
+
+# Start the Docker service
+Start-Service Docker
+</code></pre>
+<p><strong>Test it out.</strong></p>
+<pre><code class="language-powershell">docker run hello-world
+</code></pre>
+<p>For a longer explanation, see this post from <a href="https://blog.sixeyed.com/">Elton Stoneman</a>:</p>
+<p><a href="https://blog.sixeyed.com/getting-started-with-docker-on-windows-server-2019/">Getting Started with Docker on Windows Server 2019</a></p>
+<h2 id="linux">Linux</h2>
+<p>The quickest way to get Docker working on Linux, is probably using the convenience script.
+This script automatically detects the distribution in use and pulls in all the required bits.</p>
+<p>This is not necessarily the best way though, since it might not correctly detect the running distro,
+and it also requires sudo, after which it executes a pile of scripts that directly come from the internet.</p>
+<p>Having given you those warning, <a href="https://docs.docker.com/engine/install/ubuntu/#install-using-the-convenience-script">here you go</a>:</p>
+<pre><code class="language-bash">curl -fsSL https://get.docker.com -o get-docker.sh
+sudo sh get-docker.sh
+</code></pre>
                 
               
               
@@ -499,7 +610,8 @@
 				Docker Service Deploy by <a href="https://www.flyingpie.nl" target="_blank" rel="noopener">Flyingpie</a>
 			</div>
 			<div class="md-footer-copyright">
-				Made with <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">Material for MkDocs</a>
+				Made with <a href="https://www.mkdocs.org/" target="_blank" rel="noopener">MkDocs</a>
+				and <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">Material for MkDocs</a>
 			</div>
 		</div>
 	</div>

@@ -6,10 +6,10 @@ site_dir: 'docs'
 
 nav:
 - 'Getting Started':
-  - 'Install Docker': 'getting-started/01-install-docker.md'
-  - 'Setup Swarm': 'getting-started/02-setup-swarm.md'
-  - 'Create an Image': 'getting-started/03-create-an-image.md'
-  - 'Deploy a Service': 'getting-started/04-deploy-a-service.md'
+  - 'Install Docker': 'getting-started/install-docker.md'
+  - 'Setup Swarm': 'getting-started/setup-swarm.md'
+  - 'Create an Image': 'getting-started/create-an-image.md'
+  - 'Deploy a Service': 'getting-started/deploy-a-service.md'
 
 - Commands:
   - Deploy Service: commands/deploy-service.md
@@ -17,7 +17,7 @@ nav:
   - Test Auth Config: commands/test-auth-config.md
 
 - Library:
-  - 'Create Service': library/01-create-service.md
+  - 'Create Service': library/deploy-service.md
 
 - 'Service Specification':
   - Basics: service-spec/basics.md
