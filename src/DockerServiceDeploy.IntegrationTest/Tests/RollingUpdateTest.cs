@@ -10,7 +10,7 @@ using static Flyingpie.DockerServiceDeploy.IntegrationTest.TestServiceModel;
 
 namespace Flyingpie.DockerServiceDeploy.IntegrationTest.Tests
 {
-	//[TestClass]
+	[TestClass]
 	public class RollingUpdateTest
 	{
 		[TestMethod]

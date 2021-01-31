@@ -11,7 +11,7 @@ using static Flyingpie.DockerServiceDeploy.IntegrationTest.TestServiceModel;
 
 namespace Flyingpie.DockerServiceDeploy.IntegrationTest.Tests
 {
-	//[TestClass]
+	[TestClass]
 	public class CreateServiceTest
 	{
 		[TestMethod]
@@ -121,5 +121,8 @@ namespace Flyingpie.DockerServiceDeploy.IntegrationTest.Tests
 			// Assert
 			await AssertServiceTasksAsync(model.Name, 1, TaskState.Running);
 		}
+
+		// TODO: Test labels that don't match any node (and service ends up with 0 instances)
+		// TODO: Node names
 	}
 }

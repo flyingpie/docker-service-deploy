@@ -6,8 +6,8 @@ namespace Flyingpie.DockerServiceDeploy.IntegrationTest
 {
 	public static class Constants
 	{
-		public const string NAME = "TODO";
-		public const string IMAGE = "TODO";
+		public const string NAME = "sample-api";
+		public const string IMAGE = "flyingpie.nl/sample-api:1.0";
 		public const string UT = "UT";
 
 		public const string START_FAILS = "START_FAILS";

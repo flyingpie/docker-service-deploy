@@ -1,0 +1,13 @@
+{
+	"profiles": {
+		"SelfHosted": {
+			"commandName": "Project",
+			"applicationUrl": "http://0.0.0.0:1111",
+			"environmentVariables": {
+				"START_SLOW": "false",
+				"START_FAILS": "false",
+				"START_UNHEALTHY": "false"
+			}
+		}
+	}
+}

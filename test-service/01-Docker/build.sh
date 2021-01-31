@@ -1,0 +1,1 @@
+docker build -t flyingpie.nl/sample-api:1.0 .
