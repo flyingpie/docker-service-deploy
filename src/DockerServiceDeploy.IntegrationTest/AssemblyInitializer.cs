@@ -3,12 +3,12 @@ using Serilog;
 using Serilog.Events;
 using System.Threading.Tasks;
 
-using static Flyingpie.DockerServiceDeploy.IntegrationTest.Constants;
+using static DockerServiceDeploy.IntegrationTest.Constants;
 
 // Run tests in parallel
 [assembly: Parallelize(Workers = 0, Scope = ExecutionScope.MethodLevel)]
 
-namespace Flyingpie.DockerServiceDeploy.IntegrationTest
+namespace DockerServiceDeploy.IntegrationTest
 {
 	[TestClass]
 	public static class AssemblyInitializer

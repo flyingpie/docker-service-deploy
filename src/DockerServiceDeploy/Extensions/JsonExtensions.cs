@@ -3,7 +3,7 @@ using System;
 using System.Linq;
 using System.Text.RegularExpressions;
 
-namespace Flyingpie.DockerServiceDeploy.Extensions
+namespace DockerServiceDeploy.Extensions
 {
 	public static class JsonExtensions
 	{

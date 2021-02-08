@@ -1,8 +1,8 @@
 ﻿using Docker.DotNet;
 using Docker.DotNet.Models;
-using Flyingpie.DockerServiceDeploy.Docker;
+using DockerServiceDeploy.Docker;
 
-namespace Flyingpie.DockerServiceDeploy.CLI.Commands
+namespace DockerServiceDeploy.CLI.Commands
 {
 	public abstract class BaseDockerCommand
 	{

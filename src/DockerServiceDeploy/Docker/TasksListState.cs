@@ -1,10 +1,10 @@
 ﻿using Docker.DotNet.Models;
-using Flyingpie.DockerServiceDeploy.Extensions;
+using DockerServiceDeploy.Extensions;
 using Serilog;
 using System;
 using System.Collections.Generic;
 
-namespace Flyingpie.DockerServiceDeploy.Docker
+namespace DockerServiceDeploy.Docker
 {
 	/// <summary>
 	/// Keeps a state of a list of Docker tasks, and can detect when a list of tasks has not changed in a while.

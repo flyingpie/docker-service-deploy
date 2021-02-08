@@ -1,7 +1,7 @@
 ﻿using Docker.DotNet;
 using Docker.DotNet.Models;
-using Flyingpie.DockerServiceDeploy.Exceptions;
-using Flyingpie.DockerServiceDeploy.Extensions;
+using DockerServiceDeploy.Exceptions;
+using DockerServiceDeploy.Extensions;
 using Serilog;
 using System;
 using System.Collections.Generic;
@@ -9,7 +9,7 @@ using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Flyingpie.DockerServiceDeploy.Docker
+namespace DockerServiceDeploy.Docker
 {
 	public class DeployClient
 	{

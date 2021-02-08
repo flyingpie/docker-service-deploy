@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Flyingpie.DockerServiceDeploy.Extensions
+namespace DockerServiceDeploy.Extensions
 {
 	public static class DockerExtensions
 	{

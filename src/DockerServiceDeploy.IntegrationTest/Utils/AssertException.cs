@@ -2,7 +2,7 @@
 using System;
 using System.Threading.Tasks;
 
-namespace Flyingpie.DockerServiceDeploy.IntegrationTest.Utils
+namespace DockerServiceDeploy.IntegrationTest.Utils
 {
 	public static class AssertException
 	{

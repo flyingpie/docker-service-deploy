@@ -2,7 +2,7 @@
 using System.Net;
 using System.Net.Sockets;
 
-namespace Flyingpie.DockerServiceDeploy.IntegrationTest
+namespace DockerServiceDeploy.IntegrationTest
 {
 	public static class TestData
 	{

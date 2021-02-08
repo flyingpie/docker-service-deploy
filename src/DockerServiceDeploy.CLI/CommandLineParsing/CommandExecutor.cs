@@ -1,12 +1,12 @@
 ﻿using CommandLine;
 using CommandLine.Text;
-using Flyingpie.DockerServiceDeploy.CLI.Commands;
+using DockerServiceDeploy.CLI.Commands;
 using Serilog;
 using System;
 using System.Linq;
 using System.Reflection;
 
-namespace Flyingpie.DockerServiceDeploy.CLI.CommandLineParsing
+namespace DockerServiceDeploy.CLI.CommandLineParsing
 {
 	public static class CommandExecutor
 	{

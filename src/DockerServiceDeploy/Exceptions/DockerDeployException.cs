@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Flyingpie.DockerServiceDeploy.Exceptions
+namespace DockerServiceDeploy.Exceptions
 {
 	public class DockerDeployException : Exception
 	{

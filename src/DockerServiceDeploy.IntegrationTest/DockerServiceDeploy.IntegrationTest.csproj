@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 	<PropertyGroup>
-		<AssemblyName>Flyingpie.DockerServiceDeploy.IntegrationTest</AssemblyName>
-		<RootNamespace>Flyingpie.DockerServiceDeploy.IntegrationTest</RootNamespace>
+		<AssemblyName>DockerServiceDeploy.IntegrationTest</AssemblyName>
+		<RootNamespace>DockerServiceDeploy.IntegrationTest</RootNamespace>
 		<Nullable>enable</Nullable>
 		<OutputPath>bin</OutputPath>
 		<OutputType>Exe</OutputType>

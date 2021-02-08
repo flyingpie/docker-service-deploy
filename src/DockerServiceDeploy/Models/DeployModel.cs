@@ -1,4 +1,4 @@
-﻿namespace Flyingpie.DockerServiceDeploy.Models
+﻿namespace DockerServiceDeploy.Models
 {
 	public class DeployModel
 	{

@@ -1,6 +1,6 @@
 ﻿using System.Runtime.Serialization;
 
-namespace Flyingpie.DockerServiceDeploy.Models
+namespace DockerServiceDeploy.Models
 {
 	public enum DeployMode
 	{

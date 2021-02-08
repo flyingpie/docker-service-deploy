@@ -5,7 +5,7 @@ using System.Diagnostics.CodeAnalysis;
 using System.IO;
 using System.Text;
 
-namespace Flyingpie.DockerServiceDeploy.Docker
+namespace DockerServiceDeploy.Docker
 {
 	public class DockerConfig
 	{

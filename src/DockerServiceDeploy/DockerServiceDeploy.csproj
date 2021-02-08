@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 	<PropertyGroup>
-		<AssemblyName>Flyingpie.DockerServiceDeploy</AssemblyName>
-		<RootNamespace>Flyingpie.DockerServiceDeploy</RootNamespace>
+		<AssemblyName>DockerServiceDeploy</AssemblyName>
+		<RootNamespace>DockerServiceDeploy</RootNamespace>
 		<Nullable>enable</Nullable>
 		<OutputPath>bin</OutputPath>
 		<TargetFramework>net5.0</TargetFramework>

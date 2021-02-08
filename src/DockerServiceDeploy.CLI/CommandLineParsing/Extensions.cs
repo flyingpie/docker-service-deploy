@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Flyingpie.DockerServiceDeploy.CLI.CommandLineParsing
+namespace DockerServiceDeploy.CLI.CommandLineParsing
 {
 	public static class Extensions
 	{

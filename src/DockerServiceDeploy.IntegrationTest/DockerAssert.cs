@@ -3,9 +3,9 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Linq;
 using System.Threading.Tasks;
 
-using static Flyingpie.DockerServiceDeploy.IntegrationTest.Constants;
+using static DockerServiceDeploy.IntegrationTest.Constants;
 
-namespace Flyingpie.DockerServiceDeploy.IntegrationTest
+namespace DockerServiceDeploy.IntegrationTest
 {
 	public static class DockerAssert
 	{

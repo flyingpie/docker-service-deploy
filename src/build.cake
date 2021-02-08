@@ -21,11 +21,21 @@ Task("Clean").Does(() =>
 
 Task("Build").Does(() =>
 {
-	MSBuild(sln, new MSBuildSettings
+	DotNetCorePublish("DockerServiceDeploy.CLI/DockerServiceDeploy.CLI.csproj", new DotNetCorePublishSettings
 	{
 		Configuration = configuration,
-		Restore = true,
-		ToolPath = GetFiles(VSWhereLatest() + "/**/MSBuild.exe").FirstOrDefault()
+
+//		PublishReadyToRun = true,
+		PublishSingleFile = true,
+		PublishTrimmed = true,
+
+//		Runtime = "win-x64",
+		Runtime = "linux-x64",
+
+		SelfContained = true,
+
+		MSBuildSettings = new DotNetCoreMSBuildSettings()
+			.WithProperty("IncludeNativeLibrariesForSelfExtract", "true")
 	});
 });
 

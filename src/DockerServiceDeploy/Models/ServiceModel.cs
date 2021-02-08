@@ -1,5 +1,5 @@
-﻿using Flyingpie.DockerServiceDeploy.Exceptions;
-using Flyingpie.DockerServiceDeploy.Extensions;
+﻿using DockerServiceDeploy.Exceptions;
+using DockerServiceDeploy.Extensions;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
 using Newtonsoft.Json.Linq;
@@ -9,7 +9,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 
-namespace Flyingpie.DockerServiceDeploy.Models
+namespace DockerServiceDeploy.Models
 {
 	public class ServiceModel
 	{

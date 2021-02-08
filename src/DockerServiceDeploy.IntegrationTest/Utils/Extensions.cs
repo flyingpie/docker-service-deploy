@@ -3,7 +3,7 @@ using System;
 using System.Linq;
 using System.Text;
 
-namespace Flyingpie.DockerServiceDeploy.IntegrationTest.Utils
+namespace DockerServiceDeploy.IntegrationTest.Utils
 {
 	public static class Extensions
 	{

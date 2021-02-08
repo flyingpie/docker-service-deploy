@@ -1,6 +1,6 @@
 ﻿using System.Threading.Tasks;
 
-namespace Flyingpie.DockerServiceDeploy.CLI.Commands
+namespace DockerServiceDeploy.CLI.Commands
 {
 	public interface ICommand
 	{

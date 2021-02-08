@@ -1,9 +1,9 @@
 ﻿using Docker.DotNet.Models;
-using Flyingpie.DockerServiceDeploy.Models;
+using DockerServiceDeploy.Models;
 using System;
 using System.Linq;
 
-namespace Flyingpie.DockerServiceDeploy.Extensions
+namespace DockerServiceDeploy.Extensions
 {
 	public static class ModelExtensions
 	{

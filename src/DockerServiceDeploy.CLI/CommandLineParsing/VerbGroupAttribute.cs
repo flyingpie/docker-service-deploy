@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Flyingpie.DockerServiceDeploy.CLI.CommandLineParsing
+namespace DockerServiceDeploy.CLI.CommandLineParsing
 {
 	public class VerbGroupAttribute : Attribute
 	{

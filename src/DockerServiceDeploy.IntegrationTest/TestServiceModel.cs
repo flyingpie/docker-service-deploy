@@ -1,12 +1,12 @@
-﻿using Flyingpie.DockerServiceDeploy.Docker;
-using Flyingpie.DockerServiceDeploy.Extensions;
-using Flyingpie.DockerServiceDeploy.Models;
+﻿using DockerServiceDeploy.Docker;
+using DockerServiceDeploy.Extensions;
+using DockerServiceDeploy.Models;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-using static Flyingpie.DockerServiceDeploy.IntegrationTest.Constants;
+using static DockerServiceDeploy.IntegrationTest.Constants;
 
-namespace Flyingpie.DockerServiceDeploy.IntegrationTest
+namespace DockerServiceDeploy.IntegrationTest
 {
 	public static class TestServiceModel
 	{

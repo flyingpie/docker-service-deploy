@@ -3,7 +3,7 @@ using Newtonsoft.Json.Converters;
 using Newtonsoft.Json.Serialization;
 using System.IO;
 
-namespace Flyingpie.DockerServiceDeploy
+namespace DockerServiceDeploy
 {
 	public static class Json
 	{

@@ -1,6 +1,6 @@
-﻿using Flyingpie.DockerServiceDeploy.CLI.CommandLineParsing;
+﻿using DockerServiceDeploy.CLI.CommandLineParsing;
 
-namespace Flyingpie.DockerServiceDeploy
+namespace DockerServiceDeploy
 {
 	public static class Program
 	{

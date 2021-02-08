@@ -1,7 +1,7 @@
 ﻿using Serilog;
 using Serilog.Events;
 
-namespace Flyingpie.DockerServiceDeploy
+namespace DockerServiceDeploy
 {
 	public static class Logging
 	{

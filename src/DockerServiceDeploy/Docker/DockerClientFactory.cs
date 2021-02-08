@@ -5,7 +5,7 @@ using System;
 using System.Linq;
 using System.Runtime.InteropServices;
 
-namespace Flyingpie.DockerServiceDeploy.Docker
+namespace DockerServiceDeploy.Docker
 {
 	public static class DockerClientFactory
 	{

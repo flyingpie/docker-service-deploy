@@ -1,9 +1,9 @@
 ﻿using CommandLine;
-using Flyingpie.DockerServiceDeploy.CLI.CommandLineParsing;
-using Flyingpie.DockerServiceDeploy.Docker;
+using DockerServiceDeploy.CLI.CommandLineParsing;
+using DockerServiceDeploy.Docker;
 using Serilog;
 
-namespace Flyingpie.DockerServiceDeploy.CLI.Commands
+namespace DockerServiceDeploy.CLI.Commands
 {
 	[Verb("test-auth-config", HelpText = "Attempts to load auth from the local .docker/config.json file to see if it's accessible.")]
 	[VerbGroup("Utils")]

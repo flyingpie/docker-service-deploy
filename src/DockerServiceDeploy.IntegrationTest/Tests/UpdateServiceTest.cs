@@ -1,15 +1,15 @@
 ﻿using Docker.DotNet.Models;
-using Flyingpie.DockerServiceDeploy.Exceptions;
-using Flyingpie.DockerServiceDeploy.IntegrationTest.Utils;
-using Flyingpie.DockerServiceDeploy.Models;
+using DockerServiceDeploy.Exceptions;
+using DockerServiceDeploy.IntegrationTest.Utils;
+using DockerServiceDeploy.Models;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Threading.Tasks;
 
-using static Flyingpie.DockerServiceDeploy.IntegrationTest.Constants;
-using static Flyingpie.DockerServiceDeploy.IntegrationTest.DockerAssert;
-using static Flyingpie.DockerServiceDeploy.IntegrationTest.TestServiceModel;
+using static DockerServiceDeploy.IntegrationTest.Constants;
+using static DockerServiceDeploy.IntegrationTest.DockerAssert;
+using static DockerServiceDeploy.IntegrationTest.TestServiceModel;
 
-namespace Flyingpie.DockerServiceDeploy.IntegrationTest.Tests
+namespace DockerServiceDeploy.IntegrationTest.Tests
 {
 	[TestClass]
 	public class UpdateServiceTest

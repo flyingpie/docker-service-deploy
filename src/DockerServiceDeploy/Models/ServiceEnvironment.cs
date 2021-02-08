@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Flyingpie.DockerServiceDeploy.Models
+namespace DockerServiceDeploy.Models
 {
 	public class ServiceEnvironment : Dictionary<string, string>
 	{

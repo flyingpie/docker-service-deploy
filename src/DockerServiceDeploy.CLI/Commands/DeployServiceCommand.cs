@@ -1,15 +1,15 @@
 ﻿using CommandLine;
-using Flyingpie.DockerServiceDeploy.CLI.CommandLineParsing;
-using Flyingpie.DockerServiceDeploy.Docker;
-using Flyingpie.DockerServiceDeploy.Exceptions;
-using Flyingpie.DockerServiceDeploy.Extensions;
-using Flyingpie.DockerServiceDeploy.Models;
+using DockerServiceDeploy.CLI.CommandLineParsing;
+using DockerServiceDeploy.Docker;
+using DockerServiceDeploy.Exceptions;
+using DockerServiceDeploy.Extensions;
+using DockerServiceDeploy.Models;
 using Serilog;
 using System;
 using System.Diagnostics;
 using System.Threading.Tasks;
 
-namespace Flyingpie.DockerServiceDeploy.CLI.Commands
+namespace DockerServiceDeploy.CLI.Commands
 {
 	[Verb("deploy-service", HelpText = "Deploys a docker service using a 'service.json' service specification file.")]
 	[VerbGroup("Services")]
